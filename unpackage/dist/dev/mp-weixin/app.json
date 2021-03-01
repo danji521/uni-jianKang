@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/better/better",
+    "pages/amusing/amusing",
+    "pages/my/my",
+    "pages/service/service",
+    "pages/motion/motion",
+    "pages/shopping/shopping",
+    "pages/order/order",
+    "pages/details/details",
+    "pages/model/model",
+    "pages/report/report",
+    "pages/planDetails/planDetails",
+    "pages/otherPlan/otherPlan",
+    "pages/month/month"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#bfc0c5",
+    "selectedColor": "#20d3c0",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/better/better",
+        "iconPath": "static/tabBar/better-a.png",
+        "selectedIconPath": "static/tabBar/better.png",
+        "text": "更好"
+      },
+      {
+        "pagePath": "pages/amusing/amusing",
+        "iconPath": "static/tabBar/amusing-a.png",
+        "selectedIconPath": "static/tabBar/amusing.png",
+        "text": "好玩"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "static/tabBar/my-a.png",
+        "selectedIconPath": "static/tabBar/my.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap49.json"
+}

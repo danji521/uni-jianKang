@@ -1,0 +1,130 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// {
+		// 	"path": "pages/index/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "uni-app"
+		// 	}
+		// }, 
+		{
+			"path": "pages/better/better",
+			"style": {
+				"navigationBarTitleText": "健康",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/amusing/amusing",
+			"style": {
+				"navigationBarTitleText": "好玩",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/service/service",
+			"style": {
+				"navigationBarTitleText": "服务提醒",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/motion/motion",
+			"style": {
+				"navigationBarTitleText": "运动记录",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/shopping/shopping",
+			"style": {
+				"navigationBarTitleText": "商城",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "确认订单",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/details/details",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/model/model",
+			"style": {
+				"navigationBarTitleText": "理想模型",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/report/report",
+			"style": {
+				"navigationBarTitleText": "健康报告",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/planDetails/planDetails",
+			"style": {
+				"navigationBarTitleText": "方案详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/otherPlan/otherPlan",
+			"style": {
+				"navigationBarTitleText": "其他方案",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/month/month",
+			"style": {
+				"navigationBarTitleText": "可用余额",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#bfc0c5",
+		"selectedColor": "#20d3c0",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/better/better",
+			"iconPath": "static/tabBar/better-a.png",
+			"selectedIconPath": "static/tabBar/better.png",
+			"text": "更好"
+		}, {
+			"pagePath": "pages/amusing/amusing",
+			"iconPath": "static/tabBar/amusing-a.png",
+			"selectedIconPath": "static/tabBar/amusing.png",
+			"text": "好玩"
+		}, {
+			"pagePath": "pages/my/my",
+			"iconPath": "static/tabBar/my-a.png",
+			"selectedIconPath": "static/tabBar/my.png",
+			"text": "我的"
+		}]
+	}
+}
