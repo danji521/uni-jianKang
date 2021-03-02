@@ -3,33 +3,33 @@
 		<view class="header">
 			<image src="../../static/food-meal.png" mode="" class="logo"></image>
 			<view class="phone">
-				<view>ly</view>
+				<view>{{usersData.name}}</view>
 				<view>认证手机号</view>
 			</view>
 			<view class="gender">
 				<view>
 					<image src="../../static/gender.png" mode=""></image>
-					性别 女
+					性别 {{usersData.gender}}
 				</view>
 				<view>
 					<image src="../../static/height.png" mode=""></image>
-					升高 159cm
+					升高 {{usersData.height}}cm
 				</view>
 			</view>
 			<view class="birthday">
 				<view>
 					<image src="../../static/birthday.png" mode=""></image>
-					生日 1995.03.09
+					生日 {{usersData.birthday}}
 				</view>
 				<view>
 					<image src="../../static/position.png" mode=""></image>
-					位置&nbsp;&nbsp;北京市
+					位置&nbsp;&nbsp;{{usersData.place}}
 				</view>
 			</view>
 		</view>
 		<view class="nav">
 			<navigator url="../report/report" class="report">
-				<view>86</view>
+				<view>{{usersData.healthy}}</view>
 				<view>健康报告</view>
 			</navigator>
 			<view class="scheme">
@@ -64,21 +64,21 @@
 			<view class="human-tab">
 				<view class="weight">
 					<view>体重</view>
-					<view>75</view>
+					<view>{{usersData.weight}}</view>
 				</view>
 				<view class="waist">
 					<view>腰围</view>
-					<view>75</view>
+					<view>{{usersData.waist}}</view>
 				</view>
 				<view class="hipline">
 					<view>臀围</view>
-					<view>--</view>
+					<view>{{usersData.waist}}</view>
 				</view>
 			</view>
 		</view>
 		<view class="footer">
 			<view class="li li-one">
-				<view>10</view>
+				<view>{{usersData.gold}}</view>
 				<view>健康币</view>
 			</view>
 			<view class="li">
@@ -93,12 +93,12 @@
 			</view>
 			<view class="li">
 				<!-- <navigator url="../shopping/shopping"> -->
-					<view>
-						<image src="../../static/shopping.png" mode=""></image>
-					</view>
-					<view>
-						商城
-					</view>
+				<view>
+					<image src="../../static/shopping.png" mode=""></image>
+				</view>
+				<view>
+					商城
+				</view>
 				<!-- </navigator> -->
 			</view>
 			<view class="li">
@@ -124,14 +124,23 @@
 </template>
 
 <script>
+	import http from "../../utile/http.js"
 	export default {
 		data() {
 			return {
-
+				usersData: {}
 			}
 		},
+		created() {
+			this.getMyUsers();
+		},
 		methods: {
-
+			getMyUsers() {
+				http.getMyUsers().then(res => {
+					console.log(res)
+					this.usersData=res.result.data[0];
+				})
+			}
 		}
 	}
 </script>
@@ -394,7 +403,7 @@
 			&::after {
 				position: absolute;
 				bottom: 20rpx;
-				margin-left: 40rpx;
+				margin-left: 60rpx;
 				content: "cm";
 				font-size: 20rpx;
 			}
@@ -449,7 +458,8 @@
 			position: inherit;
 			font-size: 24rpx;
 			background-color: #FFFFFF;
-			&::after{
+
+			&::after {
 				display: none;
 			}
 		}

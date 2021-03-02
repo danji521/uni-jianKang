@@ -17,24 +17,21 @@
 				<view class="rewards-money_hint">￥30</view>
 			</view>
 		</view>
-		<view class="containers1" v-for="(item,i) in 2" :key="i">
+		<view class="containers1" v-for="(item,i) in activityData" :key="i">
 			<view class="containers1-tags">
 				活动
 			</view>
 			<view class="containers1-users">
 				<view class="containers1-users-ul">
-					<image src="../../static/food-meal.png" mode=""></image>
-					<image src="../../static/food-meal.png" mode=""></image>
-					<image src="../../static/food-meal.png" mode=""></image>
-					<image src="../../static/food-meal.png" mode=""></image>
+					<image :src="item.avatarImg" mode="" v-for="(item,i) in item.users" :key="i"></image>
 				</view>
 				<view>303人已参与</view>
 			</view>
 			<view class="containers1-plans">
-				跑步约定|习惯成就达人
+				{{item.target}}
 			</view>
 			<view class="containers1-rewards">
-				科学跑步 履约奖励
+				{{item.explain}}
 			</view>
 			<view class="containers1-but"></view>
 		</view>
@@ -42,14 +39,23 @@
 </template>
 
 <script>
+	import http from "../../utile/http.js"
 	export default {
 		data() {
 			return {
-
+				activityData: {}
 			}
 		},
+		created() {
+			this.getAmusingActivity()
+		},
 		methods: {
-
+			getAmusingActivity() {
+				http.getAmusingActivity().then(res => {
+					console.log(res)
+					this.activityData = res.result.data;
+				})
+			}
 		}
 	}
 </script>
@@ -149,6 +155,11 @@
 				height: 27rpx*2;
 				border-radius: 50%;
 				vertical-align: bottom;
+			}
+			.containers1-users-ul{
+				width: 370rpx;
+				height: 60rpx;
+				overflow: hidden;
 			}
 		}
 
