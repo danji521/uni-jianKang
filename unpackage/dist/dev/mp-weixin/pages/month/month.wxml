@@ -1,0 +1,1 @@
+<view class="month"><view class="container"><image src="../../static/wallet.png" mode></image><view class="balance">￥0.00</view><view class="usable-balance">(可提现余额)</view><view class="add-up">累计体现: ￥0.00</view></view><view class="all-up">全部提现</view><view class="new">提现金额必须在<text>￥1</text>以上,且必须将所有可提现余额提出,每天一次</view><view class="water">交易流水></view></view>

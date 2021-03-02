@@ -1,0 +1,1 @@
+<view class="order"><view class="address">请选择收货地址</view><view class="products"><image src="../../static/wares.png" mode></image><view class="title"><view>数量:1</view><view>73食盒</view><view>规格:1个月(饼干32包纤维粉16包)</view><view>￥599.00</view></view></view><view class="message"><view>买家留言:</view><textarea value="" placeholder="填写留言比如颜色等"></textarea></view></view>

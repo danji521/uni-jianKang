@@ -1,0 +1,24 @@
+.uni-form-item {
+  padding: 0 15rpx;
+}
+.uni-form-item .title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 22rpx;
+  font-size: 32rpx;
+  line-height: 32rpx;
+  font-weight: 600;
+}
+.uni-form-item .txt {
+  margin-top: 24rpx;
+  font-size: 24rpx;
+  color: #d1d1d3;
+}
+

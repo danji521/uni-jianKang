@@ -1,0 +1,30 @@
+.list {
+  margin: 0 40rpx;
+  height: 176rpx;
+  border-bottom: 1rpx solid #cccccc;
+}
+.list .list-hd {
+  margin-top: 36rpx;
+  line-height: 24rpx;
+  font-size: 24rpx;
+  color: #bbbbbb;
+}
+.list .list-bd {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 50rpx;
+  line-height: 26rpx;
+  font-size: 26rpx;
+  color: #000000;
+}
+.list .red {
+  color: #e4502a;
+}
+

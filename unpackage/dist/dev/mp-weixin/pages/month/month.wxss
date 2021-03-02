@@ -1,0 +1,60 @@
+.month {
+  height: 100vh;
+  background-color: #fafafa;
+}
+.container {
+  height: 466rpx;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+.container image {
+  margin-top: 88rpx;
+  width: 88rpx;
+  height: 88rpx;
+}
+.container .balance {
+  margin-top: 64rpx;
+  font-size: 64rpx;
+  color: #f86d4e;
+}
+.container .usable-balance {
+  margin-top: 32rpx;
+  font-size: 26rpx;
+  color: #bdbdbd;
+}
+.container .add-up {
+  margin-top: 32rpx;
+  font-size: 26rpx;
+  color: #000000;
+}
+.all-up {
+  margin-top: 40rpx;
+  width: 520rpx;
+  line-height: 94rpx;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 34rpx;
+  margin: 0 auto;
+  margin-top: 108rpx;
+  border: 3rpx solid #FFFFFF;
+  border-radius: 30rpx;
+  background-image: -webkit-linear-gradient(top, #00cfb7 0%, #26dca2 100%);
+  background-image: linear-gradient(180deg, #00cfb7 0%, #26dca2 100%);
+}
+.new {
+  padding: 0 30rpx;
+  margin-top: 60rpx;
+  font-size: 20rpx;
+  color: #000000;
+}
+.new text {
+  color: #f3a287;
+}
+.water {
+  margin: 0 auto;
+  margin-top: 34rpx;
+  width: 140rpx;
+  font-size: 28rpx;
+  color: #f3a287;
+}
+
